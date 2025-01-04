@@ -1,0 +1,530 @@
+Java tasks
+Addition,subtraction,multipilcation,division,modules
+
+//task 1
+public class Main{
+    public static void main(String[] args){
+      int a=10,b=2;
+      int sum;
+      sum=a+b;
+      System.out.println("Addition is:"+sum);
+      sum=a-b;
+      System.out.println("Subtraction is:"+sum);
+      sum=a*b;
+      System.out.println("Multiplication is:"+sum);
+      sum=a/b;
+      System.out.println("Division is:"+sum);
+      sum=a%b;
+      System.out.println("Modules is:"+sum);
+    }
+}
+
+//task 2 from user inputs
+import java.util.*;
+public class Main{
+    public static void main (String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a,b;
+        System.out.println("Enter First number:");
+        a=sc.nextInt();
+        System.out.println("Enter Second Number:");
+        b=sc.nextInt();
+        
+        System.out.println("Answer:->"+(a+b));
+    }
+}
+//task 3 Area of circle pi r2
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        double pi=3.14,radius;
+        System.out.println("Enter the Radius of circle:");
+        radius=sc.nextDouble();
+        
+        System.out.println("Answer is :"+((radius*radius)+pi));
+    }
+}
+
+//task 4 Area of rectangle
+formula = length+breath
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int length,breath;
+        System.out.println("Enter the Length of rectangle:");
+        length=sc.nextInt();
+        System.out.println("Enter the Breath of rectangle:");
+        breath=sc.nextInt();
+        System.out.println("Answer is :"+(length+breath));
+    }
+}
+//task 5 Area of triangle
+area=1/2=0.5*l*b
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int length,breath;
+        System.out.println("Enter the heigth of traingle:");
+        length=sc.nextInt();
+        System.out.println("Enter the base of traingle:");
+        breath=sc.nextInt();
+        double area=0.5*length*breath;
+        System.out.println("Area of triangle is :"+area);
+    }
+}
+//task 6 Kinetic Energy
+formula = 1/2 =0.5*mv2
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int mass,velocity;
+        System.out.println("Enter the mass amount of matter :");
+        mass=sc.nextInt();
+        System.out.println("Enter the velocity speed of object :");
+        velocity=sc.nextInt();
+        double area=0.5*mass*velocity*velocity;
+        System.out.println("Area of Kinetic Energy is :"+area+"J");
+    }
+}
+//task 7potential Energy
+ import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int mass,height;
+        System.out.println("Enter the mass amount of matter :");
+        mass=sc.nextInt();
+        System.out.println("Enter the gravity speed of object :");
+        double gravity=sc.nextDouble();
+        System.out.println("Enter the height  of object :");
+        height=sc.nextInt();
+        double area=mass*gravity*height;
+        System.out.println("Area of potentail Energy is :"+area+"J");
+    }
+}
+//task 8 Arthematic mean and Harmonic Mean
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int Arithmetic,Arithmetic_2;
+        
+        System.out.println("Enter the Arithmetic numbers:");
+        Arithmetic=sc.nextInt();
+        System.out.println("Enter the second Arithmetic numbers :");
+        Arithmetic_2=sc.nextInt();
+        
+         System.out.println("Enter the Harmonic numbers:");
+       double Harmonic=sc.nextInt();
+        System.out.println("Enter the second Harmonic numbers :");
+    double    Harmonic_2=sc.nextInt();
+        
+        System.out.println("Area of Arithmetic Mean is :"+((Arithmetic+Arithmetic_2)/2)+"J");
+        double harmonicanswer=2 / ((1 / Harmonic) + (1 / Harmonic_2));
+         System.out.println("Area of Harmonic Mean is :"+harmonicanswer);
+    }
+}
+//task 9 Velocity & Distance
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        double Velocity,Distance,Time,Displacement;
+        
+        System.out.println("Enter the Displacement :");
+         Displacement=sc.nextDouble();
+        System.out.println("Enter the second Time :");
+        Time=sc.nextDouble();
+       Velocity= Displacement/Time;
+         System.out.println(" Answer Velocity:"+Velocity);
+       
+       //Distsance
+       Distance=Velocity*Time;
+       System.out.println("Distance is :"+Distance);
+    }
+}
+// task 10 to print 1 to 10 numbers forloop
+
+package forloops;
+import java.util.*;
+public class Forloops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("This is first demo for forloops:");
+		int n=10;
+		for(int i=0;i<=n;i++) {
+			//to print 1 to 10 numbers
+			
+			System.out.println("*"+i);
+		}
+	}
+
+}
+//Task 11 User Even numbers
+package EvenNumber_forloop;
+import java.util.*;
+public class EvenNumber_forloop {
+// User Even numbers
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int i,n=0;
+		System.out.println("Enter the Number range to get even numbers");
+		n=sc.nextInt();
+		
+		for(i=0;i<=n;i++) {
+			if(i %2==0){ 
+				System.out.println(i);
+			}
+		}
+	}
+
+}
+//task 12User odd numbers
+package oddnumbers_forloop;
+import java.util.*;
+public class oddnumbers {
+// User Even numbers
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int i,n=0;
+		System.out.println("Enter the Number range to get odd numbers");
+		n=sc.nextInt();
+		
+		for(i=0;i<=n;i++) {
+			if(i %2!=0){ 
+				System.out.println(i);
+			}
+		}
+	}
+
+}
+//task 13 to print table
+
+package ToPrintTable;
+import java.util.*;
+public class ToPrintTable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int i,num=0,n=10;
+		System.out.println("Enter number of tabele u want to get:");
+		num=sc.nextInt();
+		
+		for(i=1;i<=n;i++) {
+		int	answer=num*i;
+			System.out.println(num+"*"+i+"="+answer);
+		}
+	}
+
+}
+//task 14 pronic or not pronic
+package pronicornotpronic_forlopps;
+import java.util.*;
+public class Pronic_or_not_proic {
+public static void main (String[]args) {
+	//n(n+1)
+	Scanner sc = new Scanner(System.in);
+	
+	int number;
+	
+	System.out.println("Enter range of number to check pronic numbers:");
+	number=sc.nextInt();
+	
+	int i,n=1;
+	for(i=0;i<n;i++) {
+		int answer=number*(number+1);
+	System.out.println(number+"*("+number+"+1)"+"="+answer+"is pronic number");
+	}
+}
+}
+/*import java.io.*;
+import java.util.*;
+import java.math.*;
+ 
+class GFG 
+{
+ 
+    // function to check Pronic Number
+    static boolean checkPronic(int x)
+    {
+        for (int i = 0; 
+             i <= (int)(Math.sqrt(x)); 
+             i++) 
+             
+            // Checking Pronic Number 
+            // by multiplying consecutive
+            // numbers
+            if (x == i * (i + 1)) 
+                return true;
+         
+        return false;
+    }
+ 
+    // Driver Code
+    public static void main(String[] args)
+    {
+        // Printing Pronic 
+        // Numbers upto 200
+        for (int i = 0; i <= 200; i++) 
+            if (checkPronic(i))
+                System.out.print(i + " ");     
+    }
+}
+ */
+
+// For loops patterns
+ package forloops;
+import java.util.*;
+public class Forloops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("This is first demo for forloops:");
+		int n=100;
+		for(int i=0;i<=n;i++) {
+			//to print 1 to 10 numbers
+			
+			System.out.println("*"+i);
+		}
+	}
+
+}
+ output:
+This is first demo for forloops:
+*0
+*1
+*2
+*3
+*4
+*5
+*6
+*7
+*8
+*9
+*10
+*11
+*12
+*13
+*14
+*15
+*16
+*17
+*18
+*19
+*20
+*21
+*22
+*23
+*24
+*25
+*26
+*27
+*28
+*29
+*30
+*31
+*32
+*33
+*34
+*35
+*36
+*37
+*38
+*39
+*40
+*41
+*42
+*43
+*44
+*45
+*46
+*47
+*48
+*49
+*50
+*51
+*52
+*53
+*54
+*55
+*56
+*57
+*58
+*59
+*60
+*61
+*62
+*63
+*64
+*65
+*66
+*67
+*68
+*69
+*70
+*71
+*72
+*73
+*74
+*75
+*76
+*77
+*78
+*79
+*80
+*81
+*82
+*83
+*84
+*85
+*86
+*87
+*88
+*89
+*90
+*91
+*92
+*93
+*94
+*95
+*96
+*97
+*98
+*99
+*100
+
+//Left_Triangle_Pattern
+
+package Forloops_patterns;
+import java.util.*;
+public class Left_Triangle_Pattern {
+public static void main(String[]args) {
+	Scanner sc = new Scanner(System.in);
+	int n=8;
+	
+	int i,j;
+	
+	for(i=1;i<=n;i++) {
+		for(j=1;j<=i;j++){
+			System.out.print("*");
+		}System.out.println("");
+	}
+}
+}
+
+output:
+*
+**
+***
+****
+*****
+******
+*******
+********
+
+
+// New_Right_Aligned_Inverted_Triagnle_with_Extra_star
+package Forloops_patterns;
+import java.util.*;
+public class New_Right_Aligned_Inverted_Triagnle_with_Extra_star {
+public static void main(String[]args) {
+	Scanner sc = new Scanner(System.in);
+	int n=8;
+	
+	int i,j;
+	
+	for(i=1;i<=n;i++) {
+		
+		for(j=1+i;j<=n;j++) {
+			System.out.print("*");
+		}System.out.println("   *");
+	}
+}
+}
+output:
+*******   *
+******   *
+*****   *
+****   *
+***   *
+**   *
+*   *
+   *
+
+// Right_aligned_triangle
+package Forloops_patterns;
+import java.util.*;
+public class Right_aligned_triangle {
+public static void main(String[]args) {
+	Scanner sc = new Scanner(System.in);
+	int n=8;
+	
+	int i,j;
+	
+	for(i=1;i<=n;i++) {
+		
+		for(j=1+i;j<=n;j++) {
+			System.out.print("*");
+		}System.out.println("*");
+	}
+}
+}
+
+
+output:
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+//Square_star_pattern
+package Forloops_patterns;
+import java.util.*;
+public class Square_star_pattern {
+public static void main(String[]args) {
+	Scanner sc = new Scanner(System.in);
+	int n=8;
+	
+	int i,j;
+	
+	for(i=1;i<=n;i++) {
+		
+		for(j=1;j<=n;j++) {
+			System.out.print("*");
+		}System.out.println("");
+	}
+}
+}
+
+output:
+********
+********
+********
+********
+********
+********
+********
+********
+
+//
+
